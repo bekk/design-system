@@ -1,13 +1,20 @@
 {
   "name": "src",
   "version": "0.1.0",
-  "private": true,
+  "main": "build/lib/index.js",
+  "types": "build/lib/index.d.ts",
+  "files": [
+    "build/lib"
+  ],
+  "watch": {
+    "build-lib": "src/*"
+  },
   "dependencies": {
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.3.2",
     "@testing-library/user-event": "^7.1.2",
     "@types/jest": "^24.0.0",
-    "@types/node": "^12.0.0",
+    "@types/node": "^12.12.27",
     "classy-ui": "^4.0.0",
     "normalize.css": "^8.0.1",
     "react": "^16.12.0",
@@ -19,7 +26,9 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "build-lib": "tsc --build",
+    "dev": "npm-watch build-lib"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -38,6 +47,7 @@
   },
   "devDependencies": {
     "@types/react": "^16.9.20",
-    "@types/react-dom": "^16.9.5"
+    "@types/react-dom": "^16.9.5",
+    "npm-watch": "^0.6.0"
   }
 }

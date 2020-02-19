@@ -1,12 +1,16 @@
 module.exports = {
   variables: {
     colors: {
-      green: "green"
+      skyfritt: "#b1e8ff",
+      hvitt: "#ffffff",
+      svart: "#000000"
     },
     breakpoints: {},
     spacing: {},
     fontFamily: {},
-    borderWidths: {},
+    borderWidths: {
+      "1": "1"
+    },
     letterSpacing: {},
     borderRadius: {},
     lineHeight: {},
