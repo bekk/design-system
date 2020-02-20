@@ -1,53 +1,29 @@
 {
-  "name": "src",
-  "version": "0.1.0",
-  "main": "build/lib/index.js",
-  "types": "build/lib/index.d.ts",
-  "files": [
-    "build/lib"
-  ],
-  "watch": {
-    "build-lib": "src/*"
-  },
-  "dependencies": {
-    "@testing-library/jest-dom": "^4.2.4",
-    "@testing-library/react": "^9.3.2",
-    "@testing-library/user-event": "^7.1.2",
-    "@types/jest": "^24.0.0",
-    "@types/node": "^12.12.27",
-    "classy-ui": "^4.0.0",
-    "normalize.css": "^8.0.1",
-    "react": "^16.12.0",
-    "react-dom": "^16.12.0",
-    "react-scripts": "3.4.0",
-    "typescript": "~3.7.2"
-  },
+  "name": "cdoc",
+  "version": "0.0.1",
+  "description": "",
+  "main": "lib/index.js",
+  "type": "lib",
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject",
-    "build-lib": "tsc --build",
-    "dev": "npm-watch build-lib"
+    "build": "tsc -p ."
   },
-  "eslintConfig": {
-    "extends": "react-app"
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dagfs/cdoc.git"
   },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dagfs/cdoc/issues"
+  },
+  "homepage": "https://github.com/dagfs/cdoc#readme",
+  "peerDependencies": {
+    "react":">=16.0.0"
   },
   "devDependencies": {
-    "@types/react": "^16.9.20",
-    "@types/react-dom": "^16.9.5",
-    "npm-watch": "^0.6.0"
+    "@types/react": "^16.9.21",
+    "react": "^16.12.0",
+    "typescript": "^3.7.5"
   }
 }
