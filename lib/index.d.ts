@@ -1,5 +1,2 @@
-import React from "react";
-export declare const Hello: React.FC<{
-    text: string;
-}>;
+export * from "./LinkCard";
 //# sourceMappingURL=index.d.ts.map
